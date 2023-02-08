@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
     fun  studentData() {
         studentList.add(Student("643021113-0","Peera",20))
         studentList.add(Student("64302113-1","Pon",21))
+        studentList.add(Student("64302113-2","Peerapon",22))
     }
 
 }
