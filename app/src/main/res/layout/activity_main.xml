@@ -10,29 +10,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student List!"
-        android:textSize="30sp"
+        android:text="Employee Information"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#0E0E0E"
          />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAddStudent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Student"
-        android:textSize="20sp"
-        android:background="#1DE425"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:padding="10dp"
-        android:layout_alignParentRight="true"
-        />
+    <RelativeLayout
+        android:id="@+id/rtLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnAddEmployee"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add_people1"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:layout_below="@id/btnAddStudent"
+        android:layout_below="@id/rtLayout"
+
         />
 
 </RelativeLayout>

@@ -17,10 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Student ID"
+        android:hint="Employee Name"
         android:layout_marginTop="12dp">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtId"
+            android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -31,10 +31,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Student Name"
+        android:hint="Employee Email"
         android:layout_marginTop="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+        </androidx.appcompat.widget.AppCompatRadioButton>
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtName"
+            android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -44,10 +59,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Age"
+        android:hint="Salary"
         android:layout_marginTop="12dp">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtAge"
+            android:id="@+id/edtSalary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"

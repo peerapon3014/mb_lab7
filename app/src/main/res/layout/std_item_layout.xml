@@ -5,25 +5,32 @@
     android:orientation="vertical"
     >
     <TextView
-        android:id="@+id/txtId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="ID"
-        android:textSize="20sp"
-        />
-    <TextView
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginTop="15dp"
         android:text="Name"
+        android:textSize="20sp"
         />
     <TextView
-        android:id="@+id/txtAge"
+        android:id="@+id/txtGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="Age"
+        android:text="Gender"
+        />
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="E-mail"
+        />
+    <TextView
+        android:id="@+id/txtSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Salary"
         />
 </LinearLayout>
