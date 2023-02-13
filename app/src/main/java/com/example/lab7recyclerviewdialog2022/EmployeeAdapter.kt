@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lab7recyclerviewdialog2022.databinding.EmpItemLayoutBinding
 import com.example.lab7recyclerviewdialog2022.databinding.StdItemLayoutBinding
 import layout.Student
 import layout.StudentsAdapter
@@ -12,12 +13,12 @@ import layout.StudentsAdapter
 class EmployeeAdapter (val employeeList: ArrayList<Employee>?, val context: Context):
     RecyclerView.Adapter<EmployeeAdapter.ViewHolder>(){
 
-    class ViewHolder(view: View, val binding: StdItemLayoutBinding):
+    class ViewHolder(view: View, val binding: EmpItemLayoutBinding):
         RecyclerView.ViewHolder(view) {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EmployeeAdapter.ViewHolder {
-        val binding = StdItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = EmpItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return EmployeeAdapter.ViewHolder(binding.root, binding)
     }
 

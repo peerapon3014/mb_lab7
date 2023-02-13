@@ -5,14 +5,17 @@
     android:orientation="vertical"
     android:padding="20dp"
     >
-    <TextView
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Student Dialog"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:layout_gravity="center_horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/employee"
+            />
+    </RelativeLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,15 +42,30 @@
             android:text="Gender"
             android:textAllCaps="false"
             android:textSize="25sp"
-            android:textStyle="bold"
             android:layout_marginTop="12dp"
             />
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            >
-        </androidx.appcompat.widget.AppCompatRadioButton>
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textStyle="bold"
+                    />
+            </RadioGroup>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
@@ -65,8 +83,9 @@
             android:id="@+id/edtSalary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textSize="20sp" />
+            android:inputType="number"
+            android:textSize="20sp"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

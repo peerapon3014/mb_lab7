@@ -23,9 +23,9 @@ class StudentsAdapter (val studentList: ArrayList<Student>?, val context:Context
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
                 val binding = holder.binding
 
-                binding.txtId.text = "ID: ${studentList!![position].id}"
+//                binding.txtId.text = "ID: ${studentList!![position].id}"
                 binding.txtName.text = "Name: ${studentList!![position].name}"
-                binding.txtAge.text = "Age: ${studentList!![position].age}"
+//                binding.txtAge.text = "Age: ${studentList!![position].age}"
         }
 
         override fun getItemCount(): Int {
